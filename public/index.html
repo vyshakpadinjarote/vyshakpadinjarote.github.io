@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <link rel="shortcut icon" href="images/collegelogo.png" type="image/x-icon">
+  <link rel="icon" href="images/collegelogo.png" type="image/x-icon">
+  <title>Rivlet-The journey of drops</title>
+<meta name="Description" content="The real-time solution to track the route of tanker along with the driver using GPS of driver's smartphone and use various sensors to check the purity of the transporting water,rivlet">
+<meta name="Keywords" content="SIH,Smart india hackathon, water supply,Rivlet,rivlet,rivlet.in,rivlet india">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RivLet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="grid.css">
+    
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.17.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.17.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.17.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.17.1/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.17.1/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <style>
+.hero {
+    background: url("bg_desk.jpg") center/cover;
+  }
+
+  @media (max-width: 1024px) {
+    .hero {
+      background: black url("bg_desk.jpg") center/cover;
+    }
+    .parallax {
+    background: black url("bg_desk.jpg") center/cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      background: black url("bg_mobile.jpg") center/cover;
+    }
+  }
+
+
+
+  #logo {
+    padding-left: 20px;
+    padding-right: 40px;
+    margin-right: 10px;
+    width: 220px;
+    height: 100px;
+  }
+
+  #exapnd {
+    margin-top: 10%;
+  }
+
+  .center,
+  .center-column,
+  .top,
+  .right,
+  .bottom,
+  .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top {
+    align-items: flex-start;
+  }
+
+  .right {
+    justify-content: flex-end;
+  }
+
+  .bottom {
+    align-items: flex-end;
+  }
+
+  .left {
+    justify-content: flex-start;
+  }
+
+  .single-spaced,
+  .single-spaced * {
+    line-height: 1;
+  }
+
+   .zoom {
+    transition: transform .3s;
+    opacity: 0.8;
+  }
+
+  .zoom:hover,
+  .zoom:active {
+    transform: scale(1.1);
+    opacity: 1.0;
+  }
+
+  @media (max-width: 1024px) {
+    .desktop {
+      display: none;
+    }
+  }
+    </style>
+
+<script>
+
+        function scrol () {
+          document.getElementById("sih").scrollIntoView();
+        }
+   
+  </script>
+
+  <!-- CSS  -->
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+
+
+</head>
+<body>
+
+  <div class="section wall">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+      <div id="particles-js"></div>
+      
+
+    </div>
+  <div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  </div>
+  <section class="container center"id="sih">
+
+    <figure class="media is-128x128">
+
+            <img class="is-rounded" src="images/sih.webp">
+       
+    </figure>
+    <div class="media-content">
+        <div class="content">
+            <h1 class="fa-3x  is-mobile"style="margin-top:20px">PRIZE WINNING INNOVATION OF SIH 2018</h1>
+        </div>
+    </div>
+
+
+</section>
+<section class="section">
+  <div class="container ">
+      <div class="columns is-multiline center">
+          <div class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen zoom ">
+              <article class="media notification has-background-white">
+                  <figure class="media-left">
+                      <span class="icon">
+                          <i class="fas fa-lg fa-columns has-text-warning"></i>
+                      </span>
+                  </figure>
+                  <div class="media-content">
+                      <div class="content">
+                          <h1 class="title is-size-4">Quality assurance</h1>
+                          <p class="subtitle is-size-5">
+                              The power of <strong>Sensor Fusion</strong> in a simple interface
+                          </p>
+                      </div>
+                  </div>
+              </article>
+          </div>
+          <div class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen zoom ">
+              <article class="media notification has-background-white">
+                  <figure class="media-left">
+                      <span class="icon has-text-info">
+                          <i class="fab fa-lg fa-wpforms"></i>
+                      </span>
+                  </figure>
+                  <div class="media-content">
+                      <div class="content">
+                          <h1 class="title is-size-4">Real time tracking</h1>
+                          <p class="subtitle is-size-5">
+                              Gps <strong>form controls</strong>, designed for high acuracy
+                          </p>
+                      </div>
+                  </div>
+              </article>
+          </div>
+          <div class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen zoom ">
+              <article class="media notification has-background-white">
+                  <figure class="media-left">
+                      <span class="icon has-text-danger">
+                          <i class="fas fa-lg fa-cubes"></i>
+                      </span>
+                  </figure>
+                  <div class="media-content">
+                      <div class="content">
+                          <h1 class="title is-size-4">Modular Design</h1>
+                          <p class="subtitle is-size-5">
+                              Accomodate multiple sensor and fucnctions
+                          </p>
+                      </div>
+                  </div>
+              </article>
+          </div>
+          <div class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen zoom">
+              <article class="media notification has-background-white center">
+                  <figure class="media-left">
+                      <span class="icon has-text-grey">
+                          <i class="fas fa-lg fa-cogs"></i>
+                      </span>
+                  </figure>
+                  <div class="media-content">
+                      <div class="content">
+                          <h1 class="title is-size-4">Monitor</h1>
+                          <p class="subtitle is-size-5">
+                              An <strong>easy alert</strong> system designed for detect theft
+                          </p>
+                      </div>
+                  </div>
+              </article>
+          </div>
+          <div class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen zoom ">
+              <article class="media notification has-background-white">
+                  <figure class="media-left">
+                      <span class="icon has-text-primary">
+                          <i class="fas fa-lg fa-warehouse"></i>
+                      </span>
+                  </figure>
+                  <div class="media-content">
+                      <div class="content">
+                          <h1 class="title is-size-4">Quantity tracking</h1>
+                          <p class="subtitle is-size-5">
+                              Design the <strong>structure</strong> of the Rivlet will lets you know if there is any quality compermise 
+                          </p>
+                      </div>
+                  </div>
+              </article>
+          </div>
+          <div class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen zoom ">
+              <article class="media notification has-background-white">
+                  <figure class="media-left">
+                      <span class="icon has-text-danger">
+                          <i class="fas fa-lg fa-cube"></i>
+                      </span>
+                  </figure>
+                  <div class="media-content">
+                      <div class="content">
+                          <h1 class="title is-size-4">Leak proof</h1>
+                          <p class="subtitle is-size-5">
+                              Never loss a drop of  <strong>water</strong>
+                          </p>
+                      </div>
+                  </div>
+              </article>
+          </div>
+          
+      </div>
+  </div>
+</section>
+<section class="container center">
+
+  <!-- <h4 id="caption" class=" has-text-centered  is-mobile" style="margin: 40px;margin-botton:20px;font-size:35px;font-weight:bold">PARTNER INCUBATOR <br>FORGE ACCELERATOR</h4> -->
+  
+  <figure class="media is-128x128 hover">
+<a href="https://www.forgeforward.in/">
+    <img class="is-rounded" src="images/Forge Logo_Partner Incubator-03.png" style="zoom: .23;">
+  </a>
+</figure>
+</section>
+<br>
+<section container>
+
+  <h1 id="caption" class=" has-text-centered  is-mobile" style="margin: 40px;margin-botton:20px;font-size:35px;font-weight:bold">GET IN TOUCH</h1>
+  <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3921.3919928985965!2d76.14228431479944!3d10.626624492423277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7ea4d0e584607%3A0x2664e7fe1daf242e!2sVidya+Academy+of+Science+and+Technology+(Engineering+College)!5e0!3m2!1sen!2sin!4v1537686704810"
+    width="100%" height="350" frameborder="10" style="border:0" allowfullscreen=""></iframe> -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d980.4940885512021!2d76.18408503228365!3d10.5810215168956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7eeab5bfc07c9%3A0xa56283bd3a91730!2sKolengattukara%20Church!5e0!3m2!1sen!2sin!4v1596532814712!5m2!1sen!2sin"
+    width="100%" height="350" frameborder="10" style="border:0" allowfullscreen=""></iframe>
+  </section>
+
+<footer class="footer  is-marginless  is-paddingless " style=" background:#212529;">
+
+
+  <div class="columns is-multiline has-text-centered is-marginless " style="padding:20px;">
+    <div class="column is-one-third content is-marginless is-paddingless ">
+      <h1 class="title is-size-5 has-text-grey-light" style="margin:30px">ABOUT US</h1>
+      <p class="subtitle is-size-6 has-text-white">Prize winning innovation of SIH 2018 from team RainbowSix </p>
+      <p class="subtitle is-size-6 has-text-white"> Thrissur, kerala</p>
+
+    </div>
+    <div class="column is-one-third content is-marginless is-paddingless ">
+
+      <h1 class="title is-size-5 has-text-grey-light" style="margin:30px">GET IN TOUCH</h1>
+      <p class="subtitle is-size-6 has-text-white">RivLet</p>
+      <p class="subtitle is-size-6 has-text-white ">
+        <a href="tel:+91-9526557181" class="has-text-white">Phone: +91-9526557181</a>
+      </p>
+      <p class="subtitle is-size-6">
+        <a class="has-text-white" href="mailto:rivletindia@gmail.com">Email: rivletindia@gmail.com</a>
+      </p>
+
+    </div>
+    <div class="column is-one-third content is-marginless is-paddingless ">
+
+      <h1 class="title is-size-5 has-text-grey-light" style="margin:30px">FOLLOW US ON </h1>
+
+      <div>
+        <p class="subtitle is-size-6 block">
+          <a href="https://www.facebook.com/rivletindia">
+            <i class="fab fa-facebook"></i>&nbsp;&nbsp;Facebook</a>
+        </p>
+        <p class="subtitle is-size-6 block">
+          <i class="fab fa-twitter-square"></i>&nbsp;&nbsp;Twitter</p>
+        <p class="subtitle is-size-6">
+          <i class="fab fa-instagram"></i>&nbsp;&nbsp;Instagram</p>
+      </div>
+
+    </div>
+
+  </div>
+  <hr style="margin-left:30px;margin-right:30px">
+  <p class="center" style="padding-bottom:30px">Developed by 
+    <a href="https://www.motify.in/"> Motify Innovations Pvt Ltd</a>
+  </p>
+ 
+
+</footer>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.17.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.17.1/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+  </body>
+</html>

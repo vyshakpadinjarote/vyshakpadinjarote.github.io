@@ -1,0 +1,231 @@
+body {
+  line-height: 1.7;
+}
+
+
+ .hoverable:hover {
+   -webkit-box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.2), 0 1.5px 20px 0 rgba(0, 0, 0, 0.19);
+           box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.2), 0 1.5px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+
+ .hoverable {
+   cursor: pointer;
+ }
+
+ .row {
+   margin-bottom: 0;
+ }
+
+nav {
+  /* background-color: yellow; */
+  height: 75px;
+}
+
+.wall {
+  min-height: 100vh;
+  background: url(../images/app.jpg) center/cover;
+}
+
+#particles-js {
+  height: 100vh;
+}
+
+.contact-div {
+  display: inline-block;
+  text-align: left;
+  margin-top:-10px;
+}
+
+@media only screen and (max-width: 320px) {
+  .date {
+    font-size: 1.34rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .container {
+    width: 95%;
+  }
+
+  .card .card-content {
+    padding: 15px;
+  }
+
+  .hoverable {
+    cursor: default;
+  }
+
+  .brand-logo img {
+    height:75px!important;
+    /* margin-top: 6px; */
+  }
+
+  .desc {
+    text-indent: inherit!important;
+  }
+
+  .card-content .rules {
+    margin-left: auto !important;
+  }
+
+  .date {
+    margin-bottom: 30px;
+  }
+
+  .row.valign-wrapper {
+    display: inherit;
+  }
+  .wall {
+    background: url(../images/appPP.jpg) center/cover;
+  }
+
+  .connect {
+    margin-left:20%
+  }
+
+  .vast {
+    margin-left:25%;
+  }
+
+  nav {
+    height: 75px;
+  }
+  footer {
+    text-align: center;
+  }
+  /* .fa-li {
+    left: 4em;
+  } */
+
+}
+
+.fa-ul {
+  margin-left: 1em;
+}
+
+iframe {
+  margin-top: 20px;
+}
+
+.brand-logo img {
+  height:75px;
+  /* margin-top: 6px; */
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+.brand-logo img:hover {
+  -webkit-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+}
+
+.header {
+  color: #98CC5D;
+}
+
+h4, h5 {
+  font-weight: 300;
+}
+
+.desc {
+  text-indent: 75px;
+  margin-top: 30px !important;
+}
+
+.rules-icon {
+  color:#1976d2;
+  font-size: 4.5rem;
+  margin-top: 10px;
+}
+
+.rules {
+  margin-left: 50px !important;
+}
+
+
+.rules-title {
+  margin-top:50px;
+  margin-bottom: 25px;
+  font-size: 1.3rem;
+}
+
+.register {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 350;
+  line-height: 40px;
+  height: 40px;
+}
+
+.card {
+  margin-top: 20px;
+}
+
+.card-image {
+  padding: 10px;
+}
+
+/* .card-content h5 {
+  float: left;
+  position: relative;
+  bottom: 8px;
+} */
+
+.card-content a {
+  position: relative;
+  top: 5px;
+}
+
+.page-footer {
+  padding: 0!important;
+  margin-top: 50px;
+  background-color: #424953 !important;
+}
+
+.page-footer h6{
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.page-footer .container{
+  width: 100%;
+  max-width: none;
+}
+
+ .page-footer .col{
+  margin-top: 20px;
+}
+
+.vastlogo {
+  margin-top: 60px;
+  width: 80%;
+  height: 100%;
+}
+
+/* Emojis */
+
+.em{height:1.5em;width:1.5em;background-position:center;background-repeat:no-repeat;background-size:contain;display:inline-block;vertical-align:middle}
+
+.em-first_place_medal{background-image:url("https://twemoji.maxcdn.com/2/72x72/1f947.png")}
+
+.em-second_place_medal{background-image:url("https://twemoji.maxcdn.com/2/72x72/1f948.png")}
+
+.em-third_place_medal{background-image:url("https://twemoji.maxcdn.com/2/72x72/1f949.png")}
+
+/* .page-footer a {
+  padding-left: 2em;
+  position: relative;
+}
+
+.page-footer a .fas {
+  position: absolute;
+  left: 0;
+} */
+
+
+/* .page-footer .col.l3{
+  width: 185px;
+  margin-left: 25px;
+} */
